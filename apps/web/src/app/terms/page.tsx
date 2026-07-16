@@ -6,7 +6,7 @@ export default function TermsPage() {
   const { t } = useLangStore()
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', padding: '60px 40px' }}>
+    <div style={{ maxWidth: 800, margin: '0 auto', padding: 'clamp(32px,5vw,60px) clamp(16px,4vw,40px)' }}>
       <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#9E896A', marginBottom: 12 }}>
         My Dressa
       </p>
@@ -56,7 +56,7 @@ export default function TermsPage() {
         {
           title: t('6. Mietbedingungen', '6. Rental Terms'),
           content: t(
-            'Bei Mietbestellungen gelten zusätzlich die Mietbedingungen. Die maximale Mietdauer beträgt 7 Tage. Eine Kaution wird bei der Bestellung autorisiert (Hold) und nach erfolgreicher Rückgabe freigegeben. Bei Beschädigungen oder Verlust wird die Kaution ganz oder teilweise einbehalten. Der Mieter ist verpflichtet, das Kleidungsstück in gepflegtem Zustand zurückzusenden.',
+            'Bei Mietbestellungen gelten zusätzlich die Mietbedingungen. Die Mietdauer wird pro Artikel angegeben und ist beim Buchen ersichtlich. Eine Kaution wird bei der Bestellung erhoben und nach erfolgreicher Rückgabe erstattet. Bei Beschädigung, Verlust oder verspäteter Rückgabe kann die Kaution ganz oder teilweise einbehalten und eine Strafgebühr erhoben werden. Der Mieter ist verpflichtet, das Kleidungsstück fristgerecht und in gepflegtem Zustand zurückzusenden.',
             'For rental orders, the rental terms apply additionally. The maximum rental period is 7 days. A deposit is authorized (held) upon ordering and released after successful return. In case of damage or loss, the deposit will be retained in full or in part. The renter is obligated to return the garment in well-maintained condition.'
           )
         },
